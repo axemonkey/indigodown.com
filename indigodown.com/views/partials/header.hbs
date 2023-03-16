@@ -1,0 +1,44 @@
+<header>
+  <a class="logo replace" href="/">INDIGO DOWN</a>
+  <nav>
+    <ul>
+{{!-- <li class=(page === 'news' ? 'current' : '')> --}}
+<li class="{{#if (eq page 'news')}}current{{/if}}">
+  <a href='news'>news</a>
+</li>
+{{!-- <li class="{{#if (eq page 'gigs')}}current{{/if}}">
+  <a href='gigs'>gigs</a>
+</li> --}}
+<li class="{{#if (eq page 'band')}}current{{/if}}">
+  <a href='band'>band</a>
+</li>
+<li class="{{#if (eq page 'music')}}current{{/if}}">
+  <a href='music'>music</a>
+</li>
+<li class="{{#if (eq page 'video')}}current{{/if}}">
+  <a href='video'>video</a>
+</li>
+<li class="{{#if (eq page 'gallery')}}current{{/if}}">
+  <a href='gallery'>gallery</a>
+</li>
+    </ul>
+  </nav>
+</header>
+{{!--
+header
+  a.logo.replace(href='/') INDIGO DOWN
+  nav
+    ul
+      li(class=(page === 'news' ? 'current' : ''))
+        a(href='news') news
+      li(class=(page === 'gigs' ? 'current' : ''))
+        a(href='gigs') gigs
+      li(class=(page === 'band' ? 'current' : ''))
+        a(href='band') band
+      li(class=(page === 'music' ? 'current' : ''))
+        a(href='music') music
+      li(class=(page === 'video' ? 'current' : ''))
+        a(href='video') video
+      li(class=(page === 'gallery' ? 'current' : ''))
+        a(href='gallery') gallery
+ --}}

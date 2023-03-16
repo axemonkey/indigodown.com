@@ -1,0 +1,51 @@
+.band-member {
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+	border-bottom: $transborder;
+
+	.band-member-figure {
+		text-align: center;
+		margin-top: 40px;
+
+		@media (min-width: 400px) {
+			text-align: right;
+			margin-top: 0;
+		}
+
+		img {
+			display: inline-block;
+			width: calc(100% - 20px);
+			box-shadow: 3px 3px 3px rgba(255 255 255 / 50%);
+			border-radius: 4px;
+		}
+
+		figcaption {
+			margin-top: 5px;
+			font-size: 1.6em;
+			font-style: italic;
+		}
+	}
+
+	&:last-child {
+		padding-bottom: 0;
+		border: none;
+	}
+
+	@media (min-width: 400px) {
+		display: flex;
+		flex-direction: row;
+
+		.band-member-copy,
+		.band-member-figure {
+			width: 50%;
+		}
+
+		&:nth-child(odd) {
+			flex-direction: row-reverse;
+
+			.band-member-figure {
+				text-align: left;
+			}
+		}
+	}
+}

@@ -1,0 +1,63 @@
+$iconSize: 30px;
+
+footer {
+	margin-top: 40px;
+	@media (min-width: 400px) {
+		flex: 0 0 auto;
+		align-items: flex-end;
+	}
+
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+
+	aside {
+		flex: 0 1 auto;
+	}
+
+	p {
+		background-color: rgba(0 0 0 / 50%);
+		padding: 5px 10px;
+		font-size: 1.9em;
+	}
+
+	a {
+		font-weight: normal;
+	}
+}
+
+.socialIcons {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+
+	li {
+		display: block;
+		margin: 2px 2px 0 0;
+		line-height: $iconSize;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		a {
+			display: block;
+			width: $iconSize;
+			height: $iconSize;
+			opacity: 0.8;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.social-svg {
+	width: $iconSize;
+	height: $iconSize;
+}

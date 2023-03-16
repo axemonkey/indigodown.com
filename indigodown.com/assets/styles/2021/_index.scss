@@ -1,0 +1,85 @@
+body.index2021 {
+	background-image: url("/images/2021/front-page-photo-tall-hi.jpg");
+
+	@media only screen and (min-resolution: 192dpi),
+		only screen and (min-resolution: 2dppx) {
+		background-image: url("/images/2021/front-page-photo-tall-hi-2x.jpg");
+	}
+
+	background-position: 45% 35%;
+	background-size: cover;
+	background-attachment: fixed;
+
+	@media (min-width: 1000px) {
+		background-image: url("/images/2021/front-page-photo-hi.jpg");
+		background-position: 65% top;
+
+		@media only screen and (min-resolution: 192dpi),
+			only screen and (min-resolution: 2dppx) {
+			background-image: url("/images/2021/front-page-photo-hi-2x.jpg");
+		}
+	}
+
+	h1 {
+		flex: 1 0 0;
+
+		img {
+			display: block;
+			width: 40vw;
+			min-width: 300px;
+			max-width: 512px;
+			height: auto;
+			opacity: 0.9;
+		}
+	}
+
+	main {
+		height: 100%;
+	}
+}
+
+.homeButtons2021 {
+	flex: 1 0 0;
+	margin: auto;
+	padding: 0;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+
+	@media (min-width: 400px) {
+		justify-content: center;
+	}
+
+	li {
+		display: inline-block;
+		list-style-type: none;
+		font-size: 3em;
+		font-weight: bold;
+		margin-right: 10px;
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-right: 0;
+			margin-bottom: 0;
+		}
+
+		a {
+			display: block;
+			color: #fff;
+			text-decoration: none;
+			font-style: normal;
+			border: 3px solid #fff;
+			border-radius: 10px;
+			padding: 12px;
+			text-shadow: 3px 3px 3px rgba(0 0 0 / 50%);
+			box-shadow: 3px 3px 3px rgba(0 0 0 / 20%);
+			background-color: rgba(200 200 200 / 10%);
+
+			&:hover {
+				background-color: rgba(200 200 200 / 40%);
+				border: 3px solid transparent;
+				color: #ffff7a;
+			}
+		}
+	}
+}
