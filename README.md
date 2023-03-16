@@ -1,4 +1,4 @@
-## Build and dev
+## Build and watch
 
 `npm run dev`
 
@@ -6,7 +6,7 @@
 
 `npm run servedev`
 
-http://localhost:777
+http://localhost:7777
 
 ## Deploy to Fly
 
