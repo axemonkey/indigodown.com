@@ -21,7 +21,7 @@ main {
 	flex-direction: column;
 	background-repeat: no-repeat;
 
-	@media (min-width: 400px) {
+	@media (width >= 400px) {
 		height: 100%;
 	}
 }

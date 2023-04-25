@@ -1,7 +1,7 @@
 nav {
 	width: 100%;
 
-	@media (min-width: 375px) {
+	@media (width >= 375px) {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -12,7 +12,7 @@ nav {
 		padding: 10px;
 		text-shadow: 3px 3px 3px rgba(0 0 0 / 75%);
 
-		@media (min-width: 400px) {
+		@media (width >= 400px) {
 			flex: 0 0 auto;
 		}
 	}
@@ -23,7 +23,7 @@ nav {
 		&.main-nav {
 			display: none;
 
-			@media (min-width: 640px) {
+			@media (width >= 640px) {
 				display: flex;
 				flex: 0 0 auto;
 				flex-direction: row;
@@ -115,14 +115,14 @@ nav {
 #touch-nav-trigger {
 	display: block;
 
-	@media (min-width: 640px) {
+	@media (width >= 640px) {
 		display: none;
 	}
 
 	li {
 		padding: 0 10px;
 
-		@media (min-width: 375px) {
+		@media (width >= 375px) {
 			padding: 10px;
 		}
 	}
