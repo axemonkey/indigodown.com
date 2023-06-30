@@ -1,20 +1,14 @@
 {
   "name": "indigodown.com",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "private": "true",
   "scripts": {
-    "start": "node server.js",
-    "servedev": "npx nodemon server.js",
+    "start": "npx @11ty/eleventy --input=./indigodown.com --serve",
     "lint-tooling": "npx eslint '*.js' 'tooling/**/*.js'",
-
-    "build": "npm-run-all buildsite:*",
+    "build": "node tooling/clean.js indigodown.com && npm-run-all build:*:indigodown",
     "lint": "npm-run-all lint:*:* lint-tooling",
     "dev": "npm-run-all lint build watch",
-    "watch": "npm-run-all --parallel watchsite:*",
-
-    "buildsite:indigodown.com": "node tooling/clean.js indigodown.com && npm-run-all build:*:indigodown",
-    "watchsite:indigodown.com": "npm-run-all --parallel watch:*:indigodown",
-    "devsite:indigodown.com": "npm-run-all lint:*:indigodown buildsite:indigodown.com watchsite:indigodown.com",
+    "watch": "npm-run-all --parallel watch:*:indigodown",
     "lint:styles:indigodown": "npm-run-all prettify:indigodown stylelint:indigodown",
     "prettify:indigodown": "prettier './indigodown.com/assets/styles/**/*.scss' --write",
     "stylelint:indigodown": "stylelint './indigodown.com/assets/styles/**/*.scss' --customSyntax postcss-scss",
@@ -32,23 +26,10 @@
     ">0.3%, last 5 versions, not dead"
   ],
   "engines": {
-    "node": "18.16.0"
+    "node": "20.3.1"
   },
   "devDependencies": {
-    "eslint": "7.17.0",
-    "eslint-plugin-import": "2.26.0",
-    "eslint-plugin-no-use-extend-native": "0.5.0",
-    "eslint-plugin-promise": "4.3.1",
-    "eslint-plugin-unicorn": "28.0.2",
-    "@springernature/eslint-config": "5.0.5",
-    "nodemon": "2.0.20",
-    "onchange": "7.1.0",
-    "stylelint": "15.6.0",
-    "stylelint-config-prettier": "9.0.4",
-    "stylelint-config-standard-scss": "9.0.0",
-    "stylelint-scss": "4.6.0"
-  },
-  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
     "@babel/core": "7.20.12",
     "@babel/plugin-proposal-object-rest-spread": "7.20.7",
     "@babel/plugin-transform-object-assign": "7.18.6",
@@ -56,9 +37,16 @@
     "@rollup/plugin-babel": "6.0.3",
     "@rollup/plugin-commonjs": "24.0.0",
     "@rollup/plugin-node-resolve": "15.0.1",
+    "@springernature/eslint-config": "5.0.5",
     "autoprefixer": "10.4.13",
     "del": "7.0.0",
+    "eslint": "7.17.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-no-use-extend-native": "0.5.0",
+    "eslint-plugin-promise": "4.3.1",
+    "eslint-plugin-unicorn": "28.0.2",
     "npm-run-all": "4.1.5",
+    "onchange": "7.1.0",
     "postcss": "8.4.21",
     "postcss-csso": "6.0.1",
     "postcss-custom-properties": "12.1.11",
@@ -67,14 +55,12 @@
     "rollup": "3.9.1",
     "sass": "1.57.1",
     "sharp": "0.31.3",
-    "svgo": "3.0.2",
-    "connect": "3.7.0",
-    "express": "4.18.2",
-    "express-handlebars": "6.0.6",
-    "handlebars": "4.7.7",
-    "moment": "2.29.4",
+    "stylelint": "15.6.0",
+    "stylelint-config-prettier": "9.0.4",
+    "stylelint-config-standard-scss": "9.0.0",
+    "stylelint-scss": "4.6.0",
     "svg-social-icons": "1.1.0",
-    "util": "0.12.5",
-    "vhost": "3.0.2"
+    "svgo": "3.0.2",
+    "util": "0.12.5"
   }
 }

@@ -1,9 +1,9 @@
 body.index2021 {
-	background-image: url("/images/2021/front-page-photo-tall-hi.jpg");
+	background-image: url("/public/images/2021/front-page-photo-tall-hi.jpg");
 
 	@media only screen and (resolution >= 192dpi),
 		only screen and (resolution >= 2dppx) {
-		background-image: url("/images/2021/front-page-photo-tall-hi-2x.jpg");
+		background-image: url("/public/images/2021/front-page-photo-tall-hi-2x.jpg");
 	}
 
 	background-position: 45% 35%;
@@ -11,12 +11,12 @@ body.index2021 {
 	background-attachment: fixed;
 
 	@media (width >= 1000px) {
-		background-image: url("/images/2021/front-page-photo-hi.jpg");
+		background-image: url("/public/images/2021/front-page-photo-hi.jpg");
 		background-position: 65% top;
 
 		@media only screen and (resolution >= 192dpi),
 			only screen and (resolution >= 2dppx) {
-			background-image: url("/images/2021/front-page-photo-hi-2x.jpg");
+			background-image: url("/public/images/2021/front-page-photo-hi-2x.jpg");
 		}
 	}
 

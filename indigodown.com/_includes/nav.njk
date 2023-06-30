@@ -1,0 +1,24 @@
+{# {% set pages2021 = ['home', 'gigs', 'music', 'video', 'band'] %} #}
+{% set pages2021 = ['home', 'music', 'video', 'band'] %}
+
+<nav>
+	<h1 class="bandname">
+		<a href="/">INDIGO DOWN</a>
+	</h1>
+	<ul class="nav main-nav current-{{ thisPage }}">
+		{% for navPage in pages2021 %}
+			<li class="{{ navPage }}"><a href="/{{ navPage }}">{{ navPage }}</a></li>
+		{% endfor %}
+	</ul>
+	<ul id="touch-nav-trigger">
+		<li><a href="#touch-nav">MENU</a></li>
+	</ul>
+	<div id="touch-nav">
+		<ul class="nav dropdown-nav current-{{ thisPage }}">
+			{% for navPage in pages2021 %}
+				<li class="{{ navPage }}"><a href="/{{ navPage }}">{{ navPage }}</a></li>
+			{% endfor %}
+			<li class="close"><a href="#">close</a></li>
+		</ul>
+	</div>
+</nav>

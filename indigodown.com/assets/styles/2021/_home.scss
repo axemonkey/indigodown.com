@@ -3,11 +3,11 @@ body.gigs,
 body.music,
 body.video,
 body.band {
-	background-image: url("/images/2021/front-page-photo-tall-hi.jpg");
+	background-image: url("/public/images/2021/front-page-photo-tall-hi.jpg");
 
 	@media only screen and (resolution >= 192dpi),
 		only screen and (resolution >= 2dppx) {
-		background-image: url("/images/2021/front-page-photo-tall-hi-2x.jpg");
+		background-image: url("/public/images/2021/front-page-photo-tall-hi-2x.jpg");
 	}
 
 	background-position: center top;
@@ -19,12 +19,12 @@ body.band {
 	}
 
 	@media (width >= 1000px) {
-		background-image: url("/images/2021/home-band-wine.jpg");
+		background-image: url("/public/images/2021/home-band-wine.jpg");
 		background-position: center 10%;
 
 		@media only screen and (resolution >= 192dpi),
 			only screen and (resolution >= 2dppx) {
-			background-image: url("/images/2021/home-band-wine-2x.jpg");
+			background-image: url("/public/images/2021/home-band-wine-2x.jpg");
 		}
 	}
 }
