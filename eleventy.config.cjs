@@ -9,6 +9,7 @@ for (const thisIcon of socialIconsSelection) {
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy('indigodown.com/public');
+	eleventyConfig.addPassthroughCopy({ 'indigodown.com/robots.txt': '/robots.txt' });
 	eleventyConfig.setUseGitIgnore(false);
 	eleventyConfig.setServerOptions({
 		// liveReload: false,
