@@ -18,7 +18,7 @@
     "watch:assets": "onchange './indigodown.com/assets/fonts' './indigodown.com/assets/files' -- npm run build:copyassets",
     "watch:images": "onchange './indigodown.com/assets/images/**/*' -- npm run build:images",
     "watch:styles": "onchange './indigodown.com/assets/styles/**/*.scss' -- npm-run-all lint:styles build:styles",
-    "test": "jest"
+    "test": "jest --runInBand"
   },
   "author": "Clive Murray <clive+murray@clivemurray.com>",
   "license": "UNLICENSED",
