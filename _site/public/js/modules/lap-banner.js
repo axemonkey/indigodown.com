@@ -1,6 +1,6 @@
 const lapBanner = {
 	storageKey: 'loveAndPainkillers-banner-config',
-	numberOfDaysToHideBanner: 2,
+	numberOfDaysToHideBanner: 7,
 	init: () => {
 		// if not cookie
 		if (lapBanner.cookieCheck()) {
@@ -20,9 +20,9 @@ const lapBanner = {
 	isCookieStillGood: cookieDismissed => {
 		const now = Date.now(); // ms since epoch to now
 		const since = now - cookieDismissed;
-		const msInTwoDays = 1000 * 60 * 60 * 24 * lapBanner.numberOfDaysToHideBanner;
+		const daysToHideBannerInMs = 1000 * 60 * 60 * 24 * lapBanner.numberOfDaysToHideBanner;
 
-		if (since < msInTwoDays) {
+		if (since < daysToHideBannerInMs) {
 			return true;
 		}
 		return false;
@@ -49,7 +49,7 @@ const lapBanner = {
 	assembleStyles: () => {
 		let str = '';
 
-		str += '.c-lap-banner {width: 100%;position: fixed;left: 0;bottom: 0;background: rgba(0, 0, 0, 90%); padding-top: 40px; @media (min-width: 600px) {padding-top: 0;} }';
+		str += '.c-lap-banner {z-index: 9999; width: 100%;position: fixed;left: 0;bottom: 0;background: rgba(0, 0, 0, 90%); padding-top: 40px; @media (min-width: 600px) {padding-top: 0;} }';
 		str += '.c-lap-banner * { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important; font-size: 22px !important; }';
 
 		str += '.c-lap-banner strong {font-weight: bold;}';
@@ -64,7 +64,7 @@ const lapBanner = {
 		str += '.c-lap-banner__link a {text-decoration: none; color: #000; font-style: normal; background-color: #5cdbff; border-radius: 100px; display: inline-block; padding: 7px 15px 5px; font-weight: bold; box-shadow: 0 0 4px rgba(255, 255, 255, 80%);}';
 		str += '.c-lap-banner__link a:hover {background: #fff;}';
 
-		str += '.c-lap-banner button {opacity: 1 !important;}';
+		str += '.c-lap-banner button {opacity: 1 !important; letter-spacing: normal !important;}';
 
 		str += '.c-lap-banner-closer {position: absolute;right: 5px;top: 5px; border: 0px solid transparent; border-radius: 100px;padding: 0 8px 2px; background: #5cdbff; color: #000; cursor: pointer;}';
 		str += '.c-lap-banner-closer:hover {background: #fff;}';
