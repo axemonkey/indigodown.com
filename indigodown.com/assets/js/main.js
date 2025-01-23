@@ -1,8 +1,8 @@
-import {lapBanner} from './modules/lap-banner.js';
+// import {lapBanner} from './modules/lap-banner.js';
 
 const init = () => {
 	document.body.classList.add('js');
-	lapBanner.init();
+	// lapBanner.init();
 };
 
 window.addEventListener('load', init);
