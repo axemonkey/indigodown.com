@@ -1,0 +1,6 @@
+{
+	"extends": ["@springernature/stylelint-config"],
+	"rules": {
+		"max-nesting-depth": 5
+	}
+}

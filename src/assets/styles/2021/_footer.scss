@@ -2,7 +2,7 @@ $iconSize: 30px;
 
 footer {
 	margin-top: 40px;
-	@media (width >= 400px) {
+	@media (min-width: 400px) {
 		flex: 0 0 auto;
 		align-items: flex-end;
 	}

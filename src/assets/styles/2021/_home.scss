@@ -5,8 +5,8 @@ body.video,
 body.band {
 	background-image: url("/public/images/2021/front-page-photo-tall-hi.jpg");
 
-	@media only screen and (resolution >= 192dpi),
-		only screen and (resolution >= 2dppx) {
+	@media only screen and (min-resolution: 192dpi),
+		only screen and (min-resolution: 2dppx) {
 		background-image: url("/public/images/2021/front-page-photo-tall-hi-2x.jpg");
 	}
 
@@ -14,16 +14,16 @@ body.band {
 	background-size: cover;
 	background-attachment: fixed;
 
-	@media (width >= 400px) {
+	@media (min-width: 400px) {
 		background-position: 45% 35%;
 	}
 
-	@media (width >= 1000px) {
+	@media (min-width: 1000px) {
 		background-image: url("/public/images/2021/home-band-wine.jpg");
 		background-position: center 10%;
 
-		@media only screen and (resolution >= 192dpi),
-			only screen and (resolution >= 2dppx) {
+		@media only screen and (min-resolution: 192dpi),
+			only screen and (min-resolution: 2dppx) {
 			background-image: url("/public/images/2021/home-band-wine-2x.jpg");
 		}
 	}

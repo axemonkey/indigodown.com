@@ -11,7 +11,7 @@ html {
 }
 
 body {
-	font-family: Cormorant, serif;
+	font-family: "Cormorant", serif;
 	color: #fff;
 	font-size: 75%;
 	height: 100%;
@@ -22,7 +22,7 @@ main {
 	flex-direction: column;
 	background-repeat: no-repeat;
 
-	@media (width >= 400px) {
+	@media (min-width: 400px) {
 		height: 100%;
 	}
 }
