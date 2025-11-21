@@ -1,45 +1,45 @@
 const CONSTS = {
 	footer: [
 		{
-			name: "copyright",
-			text: "© Indigo Down",
+			name: 'copyright',
+			text: '© Indigo Down',
 		},
 		{
-			name: "social",
+			name: 'social',
 			links: [
 				{
-					title: "email",
-					url: "mailto:band@indigodown.com?subject=Executive+Greetings",
+					title: 'email',
+					url: 'mailto:band@indigodown.com?subject=Executive+Greetings',
 				},
 				{
-					title: "twitter",
-					url: "https://twitter.com/indigodown",
+					title: 'twitter',
+					url: 'https://twitter.com/indigodown',
 				},
 				{
-					title: "instagram",
-					url: "https://instagram.com/indigodownband",
+					title: 'instagram',
+					url: 'https://instagram.com/indigodownband',
 				},
 				{
-					title: "facebook",
-					url: "https://www.facebook.com/indigodown/",
+					title: 'facebook',
+					url: 'https://www.facebook.com/indigodown/',
 				},
 				{
-					title: "apple music",
-					url: "https://music.apple.com/gb/artist/indigo-down/97194218",
+					title: 'apple music',
+					url: 'https://music.apple.com/gb/artist/indigo-down/97194218',
 				},
 				{
-					title: "spotify",
-					url: "https://open.spotify.com/artist/21rwqrV2tPxCMJmuFkH4Ya",
+					title: 'spotify',
+					url: 'https://open.spotify.com/artist/21rwqrV2tPxCMJmuFkH4Ya',
 				},
 				{
-					title: "youtube",
-					url: "https://www.youtube.com/channel/UCky98hNZ8pyElDmgtP6F9pA",
+					title: 'youtube',
+					url: 'https://www.youtube.com/channel/UCky98hNZ8pyElDmgtP6F9pA',
 				},
 			],
 		},
 		{
-			name: "credit",
-			text: "Photo: k b photography",
+			name: 'credit',
+			text: 'Photo: k b photography',
 		},
 	],
 };

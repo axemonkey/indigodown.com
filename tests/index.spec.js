@@ -1,23 +1,23 @@
-const footerMeetsExpectations = require("./helpers/footer-helper.js");
-const settings = require("./config/settings.js");
+const footerMeetsExpectations = require('./helpers/footer-helper.js');
+const settings = require('./config/settings.js');
 
 const CONSTS = {
-	pageTitle: "Indigo Down :: Executive Rock",
-	h1: "INDIGO DOWN",
-	navigationClass: "homeButtons2021",
+	pageTitle: 'Indigo Down :: Executive Rock',
+	h1: 'INDIGO DOWN',
+	navigationClass: 'homeButtons2021',
 	nav: [
 		{
-			text: "LISTEN",
-			url: "/listen",
+			text: 'LISTEN',
+			url: '/listen',
 		},
 		{
-			text: "ENTER",
-			url: "/home",
+			text: 'ENTER',
+			url: '/home',
 		},
 	],
 };
 
-describe("Landing page", () => {
+describe('Landing page', () => {
 	beforeAll(async () => {
 		await page.goto(settings.siteRoot);
 	});
@@ -30,7 +30,7 @@ describe("Landing page", () => {
 	});
 
 	test(`h1 heading should contain ${CONSTS.h1}`, async () => {
-		const h1Handle = await page.$("h1");
+		const h1Handle = await page.$('h1');
 		const h1HTML = await page.evaluate((h1) => h1.innerHTML, h1Handle);
 		await expect(h1HTML).toContain(CONSTS.h1);
 	});

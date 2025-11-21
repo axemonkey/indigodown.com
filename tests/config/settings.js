@@ -1,5 +1,5 @@
 const settings = {
-	siteRoot: "http://localhost:8080",
+	siteRoot: 'http://localhost:8080',
 };
 
 module.exports = settings;

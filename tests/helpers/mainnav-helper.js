@@ -1,7 +1,7 @@
 const CONSTS = {
 	nav: {
-		className: "main-nav",
-		items: ["home", "music", "video", "band"],
+		className: 'main-nav',
+		items: ['home', 'music', 'video', 'band'],
 	},
 };
 
