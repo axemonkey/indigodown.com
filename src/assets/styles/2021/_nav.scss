@@ -43,18 +43,18 @@ nav {
 				text-shadow: 3px 3px 3px #000;
 				font-weight: normal;
 				font-style: normal;
-
-				&:hover {
-					color: #ffff7a;
-				}
 			}
 
-			&.current {
-				font-style: italic;
+			a:hover {
+				color: #ffff7a;
+			}
+		}
 
-				a {
-					text-decoration: none;
-				}
+		li.current {
+			font-style: italic;
+
+			a {
+				text-decoration: none;
 			}
 		}
 
@@ -64,49 +64,29 @@ nav {
 				text-transform: uppercase;
 			}
 
-			&.current-home {
-				.home {
-					a {
-						font-style: italic;
-						text-decoration: none;
-					}
-				}
+			&.current-home .home a {
+				font-style: italic;
+				text-decoration: none;
 			}
 
-			&.current-gigs {
-				.gigs {
-					a {
-						font-style: italic;
-						text-decoration: none;
-					}
-				}
+			&.current-gigs .gigs a {
+				font-style: italic;
+				text-decoration: none;
 			}
 
-			&.current-music {
-				.music {
-					a {
-						font-style: italic;
-						text-decoration: none;
-					}
-				}
+			&.current-music .music a {
+				font-style: italic;
+				text-decoration: none;
 			}
 
-			&.current-video {
-				.video {
-					a {
-						font-style: italic;
-						text-decoration: none;
-					}
-				}
+			&.current-video .video a {
+				font-style: italic;
+				text-decoration: none;
 			}
 
-			&.current-band {
-				.band {
-					a {
-						font-style: italic;
-						text-decoration: none;
-					}
-				}
+			&.current-band .band a {
+				font-style: italic;
+				text-decoration: none;
 			}
 		}
 	}
